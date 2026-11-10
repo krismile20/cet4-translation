@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>四六级翻译讲义 · 词汇与句式</title>
+<style>
+:root{
+  --bg:#f6f3ec;--card:#fffdf8;--ink:#20252a;--ink-2:#5a6169;--ink-3:#8c9299;--line:#e4ded2;
+  --font-cn:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --font-en:Charter,"Iowan Old Style",Georgia,serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-cn);line-height:1.7;
+  -webkit-font-smoothing:antialiased;min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:56px 22px;background-image:
+  radial-gradient(900px 320px at 8% -10%,#eae2d0 0%,transparent 60%),
+  radial-gradient(800px 300px at 95% 5%,#e3ece6 0%,transparent 58%)}
+.wrap{width:100%;max-width:940px}
+.kicker{font-size:12.5px;letter-spacing:.22em;color:#9a8b74;margin:0 0 14px;text-transform:uppercase}
+h1{font-size:clamp(27px,4.4vw,42px);line-height:1.25;margin:0 0 14px;font-weight:800;letter-spacing:-.6px}
+h1 em{font-style:normal;color:#a3522f}
+.lede{color:var(--ink-2);margin:0 0 40px;font-size:15.5px;max-width:60ch}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+a.card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:26px 24px 24px;position:relative;overflow:hidden;transition:.18s;
+  box-shadow:0 1px 2px rgba(35,30,20,.05),0 10px 28px -16px rgba(35,30,20,.22)}
+a.card::before{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:var(--ac)}
+a.card:hover{transform:translateY(-3px);border-color:#d3c9b6;
+  box-shadow:0 2px 4px rgba(35,30,20,.06),0 18px 36px -18px rgba(35,30,20,.3)}
+a.card .no{font-family:var(--font-en);font-size:12.5px;letter-spacing:.1em;color:var(--ac);font-weight:600}
+a.card h2{font-size:20px;margin:6px 0 8px;letter-spacing:-.2px}
+a.card p{margin:0;font-size:14px;color:var(--ink-2)}
+a.card .meta{margin-top:18px;font-size:12.5px;color:var(--ink-3);display:flex;gap:14px;flex-wrap:wrap}
+a.card .go{position:absolute;right:22px;top:24px;color:#c9c0ad;font-size:18px;transition:.18s}
+a.card:hover .go{color:var(--ac);transform:translateX(3px)}
+footer{margin-top:36px;font-size:12.5px;color:var(--ink-3);display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap}
+@media (max-width:720px){
+  body{padding:38px 18px;align-items:flex-start}
+  .cards{grid-template-columns:1fr}
+  a.card{padding:22px 20px}
+}
+@media print{a.card{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">CET-4 / CET-6 · Translation</p>
+  <h1>四六级翻译讲义<br><em>词汇底子 + 句式模板</em></h1>
+  <p class="lede">两份单文件讲义：一份解决「词不会写」，一份解决「句子写不长」。都支持搜索、遮盖自测和打印。</p>
+
+  <div class="cards">
+    <a class="card" href="words.html" style="--ac:#a3522f">
+      <span class="go">→</span>
+      <span class="no">PART 01</span>
+      <h2>六大主题常考词 + 14 个句型</h2>
+      <p>历史文化、自然风光、饮食佳节、社会发展、科技教育、医疗健康，231 条中英对照；附词汇升级与 73 条主题词。</p>
+      <div class="meta"><span>386 条词条</span><span>14 讲</span><span>可打印</span></div>
+    </a>
+    <a class="card" href="sentence.html" style="--ac:#2d5c50">
+      <span class="go">→</span>
+      <span class="no">PART 02</span>
+      <h2>22 个句式进阶技巧</h2>
+      <p>是字结构、成分缺失、隐藏被动、一句多动词、的字结构、定语从句……每讲只留规则、对照与易错点。</p>
+      <div class="meta"><span>22 讲</span><span>真题例句</span><span>遮盖译文</span></div>
+    </a>
+  </div>
+
+  <footer>
+    <span>邹老师四六级 · 翻译讲义</span>
+    <span>Ctrl/⌘ + P 可直接打印成纸质讲义</span>
+  </footer>
+</div>
+</body>
+</html>
